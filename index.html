@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Columbus Konfirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main-background">
+
+    <button class="menu-button" onclick="goToMenu()">Menu</button>
+
+    <div class="content">
+        <h1>Columbus Konfirmation</h1>
+        <p>Dato: 14. maj 2026</p>
+        <p>Sted: Avderødvej 50A, 2980 Kokkedal</p>
+        <p>Tid: Kl. 12:00</p>
+
+        <div class="rsvp-box">
+            <h2>kommer du?</h2>
+            <input type="text" id="name" placeholder="Dit navn">
+            <select id="attendance">
+                <option value="">Kommer du?</option>
+                <option value="Ja">Ja</option>
+                <option value="Nej">Nej</option>
+            </select>
+            <button onclick="sendRSVP()">Send</button>
+            <p id="responseMessage"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
